@@ -4,25 +4,32 @@ import decoration.Book;
 import decoration.BookInterface;
 import org.junit.jupiter.api.Assertions;
 
-class TableTest {
+class TableTest
+{
     Table table;
     BookInterface book;
 
     @org.junit.jupiter.api.BeforeEach
-    void setUp() {
-        try {
+    void setUp()
+    {
+        try
+        {
             table = new Table(1);
-        } catch (Exception e) {
+        }
+        catch (Exception e)
+        {
 
         }
     }
 
     @org.junit.jupiter.api.AfterEach
-    void tearDown() {
+    void tearDown()
+    {
     }
 
     @org.junit.jupiter.api.Test
-    void putBook() {
+    void putBook()
+    {
         TableException thrown = Assertions.assertThrows(TableException.class,
                 () ->
                 {
@@ -37,22 +44,27 @@ class TableTest {
     }
 
     @org.junit.jupiter.api.Test
-    void peek() {
+    void peek()
+    {
     }
 
     @org.junit.jupiter.api.Test
-    void takeBook() {
+    void takeBook()
+    {
     }
 
     @org.junit.jupiter.api.Test
-    void getStack() {
+    void getStack()
+    {
     }
 
     @org.junit.jupiter.api.Test
-    void getM() {
+    void getM()
+    {
     }
 
     @org.junit.jupiter.api.Test
-    void testToString() {
+    void testToString()
+    {
     }
 }

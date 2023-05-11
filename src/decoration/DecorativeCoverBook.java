@@ -13,31 +13,31 @@ public class DecorativeCoverBook extends BookDecorator {
 
     @Override
     public String getAuthor() {
-        return getAuthor();
+        return decoratedBook.getAuthor();
     }
 
     @Override
     public void setAuthor(String author) {
-        setAuthor(author);
+        decoratedBook.setAuthor(author);
     }
 
     @Override
     public String getTitle() {
-        return getAuthor();
+        return decoratedBook.getTitle();
     }
 
     @Override
     public void setTitle(String title) {
-        setTitle(title);
+        decoratedBook.setTitle(title);
     }
 
     @Override
     public int getPages() {
-        return getPages();
+        return decoratedBook.getPages();
     }
 
     @Override
     public void setPages(int pages) {
-        setPages(pages);
+        decoratedBook.setPages(pages);
     }
 }

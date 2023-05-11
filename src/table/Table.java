@@ -1,24 +1,31 @@
 package table;
 
-import decoration.Book;
 import decoration.BookInterface;
+
 import java.util.Stack;
 
-public class Table {
+public class Table
+{
     private Stack<BookInterface> stack;
     private int M;
 
-    public Table(int M) throws TableException {
+    public Table(int M) throws TableException
+    {
         if (M < 1)
+        {
             throw new TableException("Wrong size of the table");
+        }
 
         this.M = M;
         stack = new Stack<BookInterface>();
     }
 
-    void putBook(BookInterface book) throws TableException {
+    void putBook(BookInterface book) throws TableException
+    {
         if (stack.size() == M)
+        {
             throw new TableException("Table is full");
+        }
 
         stack.push(book);
     }
@@ -43,16 +50,19 @@ public class Table {
         return stack.pop();
     }
 
-    public Stack<BookInterface> getStack() {
+    public Stack<BookInterface> getStack()
+    {
         return stack;
     }
 
-    public int getM() {
+    public int getM()
+    {
         return M;
     }
 
     @Override
-    public String toString() {
+    public String toString()
+    {
         return super.toString();
     }
 }
