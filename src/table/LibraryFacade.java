@@ -10,8 +10,8 @@ public class LibraryFacade {
 
     public LibraryFacade() throws TableException {
         readingRoom = ReadingRoom.getInstance();
-        readingRoom.getTable();
-        readingRoom.getBookstand();
+        table = readingRoom.getTable();
+        bookstand = readingRoom.getBookstand();
 
         bookstandBuilder = new BookstandBuilder();
     }

@@ -20,7 +20,7 @@ public class Table
         stack = new Stack<BookInterface>();
     }
 
-    void putBook(BookInterface book) throws TableException
+    public void putBook(BookInterface book) throws TableException
     {
         if (stack.size() == M)
         {
@@ -30,7 +30,7 @@ public class Table
         stack.push(book);
     }
 
-    BookInterface peek() throws TableException
+    public BookInterface peek() throws TableException
     {
         if (stack.size() == 0)
         {
@@ -40,7 +40,7 @@ public class Table
         return stack.peek();
     }
 
-    BookInterface takeBook() throws TableException
+    public BookInterface takeBook() throws TableException
     {
         if (stack.size() == 0)
         {
@@ -63,6 +63,10 @@ public class Table
     @Override
     public String toString()
     {
-        return super.toString();
+        StringBuilder sb = new StringBuilder();
+        for (BookInterface book : stack) { // Zmienna 'books' powinna być listą lub stosiem książek w Twoim stole.
+            sb.append(String.format("| %s | %s | %d |\n", book.getAuthor(), book.getTitle(), book.getPages()));
+        }
+        return sb.toString();
     }
 }

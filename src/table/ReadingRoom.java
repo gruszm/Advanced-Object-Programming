@@ -1,7 +1,5 @@
 package table;
 
-import decoration.Book;
-
 public class ReadingRoom
 {
     private static int tableCapacity = 10000;
@@ -37,5 +35,9 @@ public class ReadingRoom
     public Bookstand getBookstand()
     {
         return bookstand;
+    }
+
+    public static void resetInstance() {
+        instance = null;
     }
 }
