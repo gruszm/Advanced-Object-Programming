@@ -5,6 +5,7 @@ import decoration.BookInterface;
 public class LibraryFacade {
     ReadingRoom readingRoom;
     Table table;
+
     Bookstand bookstand;
     BookstandBuilder bookstandBuilder;
 
@@ -14,6 +15,11 @@ public class LibraryFacade {
         bookstand = readingRoom.getBookstand();
 
         bookstandBuilder = new BookstandBuilder();
+    }
+
+    public Bookstand getBookstand()
+    {
+        return bookstand;
     }
 
     public Shelf getShelf(int number) throws BookstandException {
