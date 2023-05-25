@@ -1,3 +1,5 @@
+package table;
+
 /**
  * Klasa Main, która zawiera metodę main, stanowiącą punkt startowy dla aplikacji.
  *
@@ -5,8 +7,6 @@
  * @version 1.0
  * @since JDK 17
  */
-package table;
-
 public class Main
 {
     /**

@@ -1,3 +1,5 @@
+package table;
+
 /**
  * Klasa ReadingRoom reprezentuje pomieszczenie z pojedynczym stołem i regałem na książki.
  * Używa wzorca Singleton, aby zapewnić tylko jedną instancję klasy ReadingRoom.
@@ -6,8 +8,6 @@
  * @version 1.0
  * @since JDK 17
  */
-package table;
-
 public class ReadingRoom
 {
     private static int tableCapacity = 10000;
